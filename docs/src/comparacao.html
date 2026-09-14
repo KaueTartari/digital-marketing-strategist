@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Comparação digital-marketing-strategist</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { width: 1600px; background: #161513; color: #F2EDE4; font-family: "Space Grotesk", Arial, sans-serif; padding: 64px; overflow: hidden; }
+  h1 { font-size: 64px; line-height: 1; letter-spacing: -0.04em; margin-bottom: 16px; }
+  h1 span { color: #FF4F1A; }
+  .sub { font-size: 22px; color: #9c968c; margin-bottom: 48px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+  .label { font-family: "JetBrains Mono", monospace; font-size: 16px; letter-spacing: .06em; margin-bottom: 16px; display: flex; gap: 8px; align-items: center; }
+  .label i { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+  .off i { background: #6b6760; } .on i { background: #FF4F1A; }
+  .box { border: 1.5px solid #3a3733; padding: 32px; }
+  .on .box { border-color: #F2EDE4; }
+  .kpis { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .kpi { background: #22201d; padding: 20px 24px; }
+  .kpi small { display: block; font-family: "JetBrains Mono", monospace; font-size: 13px; letter-spacing: .06em; color: #9c968c; margin-bottom: 8px; }
+  .kpi b { font-size: 44px; letter-spacing: -0.03em; line-height: 1; }
+  .off .kpi b { color: #b9b3a8; }
+  .on .kpi.main { background: #FF4F1A; color: #161513; }
+  .on .kpi.main small { color: #161513; }
+  .note { margin-top: 20px; font-size: 19px; line-height: 1.45; }
+  .off .note { color: #9c968c; }
+  .note em { font-style: normal; color: #FF4F1A; }
+  footer { font-family: "JetBrains Mono", monospace; font-size: 14px; color: #9c968c; margin-top: 32px; }
+</style>
+</head>
+<body>
+  <h1>Mesma campanha. <span>O número que paga as contas.</span></h1>
+  <p class="sub">Relatório mensal de uma campanha B2B com investimento de R$ 60 mil.</p>
+  <div class="grid">
+    <div class="off">
+      <p class="label"><i></i>SEM A SKILL</p>
+      <div class="box">
+        <div class="kpis">
+          <div class="kpi"><small>ALCANCE</small><b>1,2 mi</b></div>
+          <div class="kpi"><small>CTR</small><b>2,3%</b></div>
+          <div class="kpi"><small>LEADS</small><b>4.800</b></div>
+          <div class="kpi"><small>CPL</small><b>R$ 12,50</b></div>
+        </div>
+        <p class="note">“Excelente mês! Recorde de leads com o menor CPL do ano. Recomendamos aumentar a verba.”</p>
+      </div>
+    </div>
+    <div class="on">
+      <p class="label"><i></i>COM DIGITAL-MARKETING-STRATEGIST</p>
+      <div class="box">
+        <div class="kpis">
+          <div class="kpi main"><small>CONTRATOS FECHADOS</small><b>19</b></div>
+          <div class="kpi"><small>SQLs</small><b>142</b></div>
+          <div class="kpi"><small>CAC</small><b>R$ 3.160</b></div>
+          <div class="kpi"><small>LTV / CAC</small><b>3,4×</b></div>
+        </div>
+        <p class="note">Só 3% dos leads viraram SQL: <em>o formulário aberto atraiu curiosos.</em> Próximo passo: otimizar a campanha por SQL via conversões offline antes de subir verba.</p>
+      </div>
+    </div>
+  </div>
+  <footer>github.com/KaueTartari/digital-marketing-strategist · números fictícios, exemplo ilustrativo</footer>
+</body>
+</html>
